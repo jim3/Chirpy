@@ -15,7 +15,7 @@ func main() {
 		// todo
 	})
 
-	// Create a new http.Server struct (note, this can be confusing if you are use to creating your own structs as `Server` is already created for you)
+	// Create a new http.Server struct
 	s := &http.Server{
 		Addr:    ":8080", // Set the .Addr field to ":8080"
 		Handler: mux,     // Use the new "ServeMux" as the server's handler
