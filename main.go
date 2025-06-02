@@ -5,12 +5,6 @@ import (
 	"net/http"
 )
 
-// A Server defines parameters for running an HTTP server.
-// type Server struct {
-// 	// Addr optionally specifies the TCP address for the server to listen on, in the form "host:port".
-// 	Addr string
-// }
-
 func main() {
 	// Create a new servemux
 	mux := http.NewServeMux()
@@ -32,5 +26,3 @@ func main() {
 		log.Fatalf("Server failed to start: %v", err)
 	}
 }
-
-// bootdev run 861ada77-c583-42c8-a265-657f2c453103
